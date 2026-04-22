@@ -49,27 +49,3 @@ Untuk menyambungkan aplikasi ini ke pelayan ERPNext anda sendiri, ikuti langkah-
 ```bash
 git clone [https://github.com/iyon09/FlutterxERPNext.git](https://github.com/iyon09/FlutterxERPNext.git)
 cd FlutterxERPNext
-2. Konfigurasi URL ERPNext
-Anda perlu menukar URL asas (base URL) kepada alamat pelayan ERPNext anda:
-
-Buka fail konfigurasi utama (biasanya di dalam lib/constants.dart atau fail berkaitan API).
-
-Cari pembolehubah baseUrl atau apiUrl.
-
-Gantikan nilai tersebut dengan URL ERPNext anda:
-
-Dart
-// Contoh penukaran di dalam kod
-const String baseUrl = '[https://erp-anda-sendiri.com](https://erp-anda-sendiri.com)';
-3. Kemaskini Dependensi
-Jalankan arahan berikut untuk memuat turun pakej yang diperlukan:
-
-Bash
-flutter pub get
-4. Jalankan Aplikasi
-Sambungkan peranti anda atau mulakan emulator, kemudian jalankan:
-
-Bash
-flutter run
-🔐 Keselamatan
-Pastikan anda tidak menyimpan API Secret secara terbuka dalam kod sumber jika anda bercadang untuk menerbitkan aplikasi ini secara awam. Gunakan fail .env atau environment variables untuk keselamatan yang lebih baik.
